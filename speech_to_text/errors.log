@@ -1,0 +1,56 @@
+[2019-11-07 12:16:52,742] [            updater.py:511 ] [ WARNING]   Exiting immediately!
+[2019-12-21 09:48:44,301] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:48:49,260] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:48:54,287] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:48:59,266] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:49:04,279] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:49:09,262] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:49:11,754] [            updater.py:511 ] [ WARNING]   Exiting immediately!
+[2019-12-21 09:51:09,215] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:51:14,235] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:51:19,231] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 09:51:20,501] [            updater.py:511 ] [ WARNING]   Exiting immediately!
+[2019-12-21 10:06:44,305] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:06:46,402] [            updater.py:511 ] [ WARNING]   Exiting immediately!
+[2019-12-21 10:41:19,465] [            updater.py:511 ] [ WARNING]   Exiting immediately!
+[2019-12-21 10:45:56,368] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:46:09,890] [            updater.py:345 ] [   ERROR]   Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2019-12-21 10:46:09,890] [         dispatcher.py:512 ] [   ERROR]   No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/ext/updater.py", line 332, in _network_loop_retry
+    if not action_cb():
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/ext/updater.py", line 291, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/bot.py", line 66, in decorator
+    result = func(self, *args, **kwargs)
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/bot.py", line 1983, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/utils/request.py", line 324, in post
+    result = self._request_wrapper('POST', url,
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/utils/request.py", line 242, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2019-12-21 10:46:11,344] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:46:23,750] [            updater.py:345 ] [   ERROR]   Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2019-12-21 10:46:23,751] [         dispatcher.py:512 ] [   ERROR]   No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/ext/updater.py", line 332, in _network_loop_retry
+    if not action_cb():
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/ext/updater.py", line 291, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/bot.py", line 66, in decorator
+    result = func(self, *args, **kwargs)
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/bot.py", line 1983, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/utils/request.py", line 324, in post
+    result = self._request_wrapper('POST', url,
+  File "/home/gregdan3/.local/share/virtualenvs/server-administration-bot-njWlrroa/lib/python3.8/site-packages/telegram/utils/request.py", line 242, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2019-12-21 10:46:26,344] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:46:41,469] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:46:56,353] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:47:11,336] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:47:26,339] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:47:41,348] [     connectionpool.py:275 ] [ WARNING]   Connection pool is full, discarding connection: api.telegram.org
+[2019-12-21 10:47:42,755] [            updater.py:511 ] [ WARNING]   Exiting immediately!
