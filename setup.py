@@ -6,7 +6,13 @@ from setuptools import setup, find_packages, Command
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-REQUIRED = ["SpeechRecognition", "pocketsphinx", "pyyaml"]
+REQUIRED = [
+    "SpeechRecognition",
+    "pocketsphinx",
+    "pyyaml",
+    "google-cloud-speech",
+    "google-api-python-client",
+]
 
 TEST_REQUIREMENTS = ["pytest"]
 

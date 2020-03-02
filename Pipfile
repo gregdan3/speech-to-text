@@ -11,4 +11,6 @@ speech-to-text = {path = "."}
 SpeechRecognition = "*"
 pocketsphinx = "*"
 pyyaml = "*"
+google-cloud-speech = "*"
+google-api-python-client = "*"
 
