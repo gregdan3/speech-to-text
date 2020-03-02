@@ -18,6 +18,7 @@ It's somewhat simplistic, and only supports the `pocketsphinx` engine thus far,
 but it works decently. Currently only prints text to the terminal, but that can
 be redirected (`>`) to a file at the user's leisure.
 
+
 ### Work to be done
 In no particular order, and not comprehensively:
 - Install as a CLI tool properly (for testing, in `/usr/local/bin/`)
@@ -32,6 +33,7 @@ In no particular order, and not comprehensively:
   need to install extra packages) as just a python script
 - Omit some dependencies, to be made optional, as SpeechRecognition itself does
 
+
 ### Concerns
 The SpeechRecognition library is noted to be outdated in a
 [few](https://github.com/Uberi/speech_recognition/issues/453)
@@ -40,3 +42,6 @@ The SpeechRecognition library is noted to be outdated in a
 
 It may be necessary to seek out a different library entirely, or abandon the use
 of a library at the cost of reduced support for a variety of engines.
+
+This tool should NOT, by any means, be considered to be stable. At all!
+
