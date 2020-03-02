@@ -30,6 +30,7 @@ In no particular order, and not comprehensively:
 - Fallback to pocketsphinx engine if there is no network connection
 - Verify that the package can work relatively independently (user doesn't
   need to install extra packages) as just a python script
+- Omit some dependencies, to be made optional, as SpeechRecognition itself does
 
 ### Concerns
 The SpeechRecognition library is noted to be outdated in a
