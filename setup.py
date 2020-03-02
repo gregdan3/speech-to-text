@@ -6,7 +6,7 @@ from setuptools import setup, find_packages, Command
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-REQUIRED = ["SpeechRecognition", "pyyaml"]
+REQUIRED = ["SpeechRecognition", "pocketsphinx", "pyyaml"]
 
 TEST_REQUIREMENTS = ["pytest"]
 

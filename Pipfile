@@ -10,4 +10,5 @@ pytest = "*"
 speech-to-text = {path = "."}
 SpeechRecognition = "*"
 pocketsphinx = "*"
+pyyaml = "*"
 
