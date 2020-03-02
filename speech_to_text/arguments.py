@@ -21,7 +21,16 @@ def BaseArgParser():
         dest="engine",
         metavar="ENGINE",
         type=str,
-        choices=["bing", "google", "google_cloud", "houndify", "ibm", "sphinx", "wit"],
+        choices=[
+            "azure",
+            "bing",
+            "google",
+            "google_cloud",
+            "houndify",
+            "ibm",
+            "sphinx",
+            "wit",
+        ],
         default="sphinx",
         help="The engine to use for your speech recognition process",
     )
