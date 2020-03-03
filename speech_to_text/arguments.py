@@ -50,7 +50,6 @@ def BaseArgParser():
         dest="output",
         metavar="OUTPUT",
         type=str,
-        default="output.txt",
         help="The name of the file to output text content to",
     )
     parser.add_argument(
