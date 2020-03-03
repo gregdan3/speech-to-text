@@ -28,6 +28,11 @@ def find_file_in_cwd(filename):
     return os.path.join(cwd, filename)
 
 
+def write_output_in_cwd(filename, output):
+    with open(os.path.join(cwd, filename), "w") as f:
+        f.write(output)
+
+
 def main():
     print(load_yml_file(os.path.join(here, "local_config.yml")))
 
