@@ -36,7 +36,7 @@ def main(argv):
             _log.critical("Invalid engine %s provided! Shutting down...", argv.engine)
             sys.exit()
 
-        with sr.AudioFile(argv.audio) as src:
+        with sr.AudioFile(find_file_in_cwd(argv.audio)) as src:
             audio = recognizer.record(src)
             text = engine_func(audio)  # implicitly attached to recognizer
             # TODO: handle other engine funcs with other attributes?
