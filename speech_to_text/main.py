@@ -6,7 +6,12 @@ import sys  # TODO: use to read audio files from sys.stdin.buffer...
 import speech_recognition as sr
 
 # local
-from speech_to_text.file_utils import load_token, load_yml_file, load_audio_file
+from speech_to_text.file_utils import (
+    load_token,
+    load_yml_file,
+    find_file_in_cwd,
+    write_output_in_cwd,
+)
 from speech_to_text.log_utils import init_logger
 from speech_to_text.arguments import BaseArgParser
 
