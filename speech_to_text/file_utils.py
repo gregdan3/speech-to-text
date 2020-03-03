@@ -24,8 +24,8 @@ def load_token(token_name):
     return token
 
 
-def load_audio_file(filename):
-    """ TODO """
+def find_file_in_cwd(filename):
+    return os.path.join(cwd, filename)
 
 
 def main():
