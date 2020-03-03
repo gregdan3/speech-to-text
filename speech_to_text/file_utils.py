@@ -8,6 +8,7 @@ import __main__
 __all__ = ["here", "load_token", "load_yml_file"]
 
 here = os.path.abspath(os.path.dirname(__main__.__file__))
+cwd = os.getcwd()
 
 _log = logging.getLogger(__name__)
 
