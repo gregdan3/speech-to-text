@@ -40,7 +40,13 @@ def main(argv):
             audio = recognizer.record(src)
             text = engine_func(audio)  # implicitly attached to recognizer
             # TODO: handle other engine funcs with other attributes?
-            print(text)
+
+            if argv.output:
+                write_output_in_cwd(argv.output, text)
+                _log.info("Wrote result in %s!", argv.output)
+            else:
+                print(text)
+
     except KeyboardInterrupt:
         _log.info("Shutting down.")
 
